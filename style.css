@@ -40,8 +40,12 @@ body{
 }
 
 .num:hover {
-  background: #737782;
+  background: #caccd4c5;
   cursor: pointer;
+}
+
+.num:active {
+  background: #5f6575;
 }
 
 .operator {
@@ -64,6 +68,10 @@ body{
 }
 
 .ope:hover {
-  background: #caaf02;
+  background: #f9ea86da;
   cursor: pointer;
+}
+
+.ope:active {
+  background: #e0c30f;
 }
