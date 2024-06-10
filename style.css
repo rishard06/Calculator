@@ -16,16 +16,18 @@ body{
 
 .btn {
   display: flex;
+  background: #bcbec4;
   width: 300px;
 }
 
 .numbers {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   max-width: 70%;
-  
+  /* margin: 10px; */
+  /* background: red; */
 }
 
 .num {
@@ -59,8 +61,9 @@ body{
 .ope {
   font-size: 20px;
   font-weight: bold;
+  margin-left: 0;
   margin: 5px;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   border: none;
   background: #ffe334;
