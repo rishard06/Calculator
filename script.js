@@ -22,6 +22,7 @@ const clear = document.querySelector('#clear');
 const equal = document.querySelector('#equal');
 const btn = document.querySelector('.btn');
 const backspacee = document.getElementById('backspace');
+const decimal = document.getElementById('decimal');
 
 let numberFirst = '';
 let numberSecond = '';
@@ -84,6 +85,16 @@ const operate = function () {
     return divide(intoNumFirst, intoNumSecond);
   }
 };
+
+decimal.addEventListener('click', () => {
+  if(operator === '') {
+    numberFirst += '.';
+    display.value = numberFirst;
+  }else {
+    numberSecond += '.';
+    display.value = numberSecond;
+  }
+});
 
 backspacee.addEventListener('click', () => {
   if(operator === '') {
